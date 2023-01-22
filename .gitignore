@@ -14,7 +14,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -132,13 +131,14 @@ dmypy.json
 # Ignore all bazel-* symlinks. There is no full list since this can change
 # based on the name of the directory bazel is cloned into.
 /bazel-*
+# Bazelisk version file
+.bazelversion
 # User-specific .bazelrc
 user.bazelrc
 
 # Frontend
 dist/
 node_modules
-.yarn
 
 # Prerequisites
 *.d
@@ -172,9 +172,3 @@ node_modules
 *.exe
 *.out
 *.app
-
-# Gatsby
-node_modules/
-.cache/
-public
-src/gatsby-types.d.ts
